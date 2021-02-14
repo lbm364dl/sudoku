@@ -40,8 +40,7 @@ def is_num_valid(grid, num, i, j):
 
 
 def get_empty_squares(grid):
-	l = [(i, j) for i, row in enumerate(grid) for j, col in enumerate(row) if col == 0]
-	return l
+	return [(i, j) for i, row in enumerate(grid) for j, col in enumerate(row) if col == 0]
 
 
 def solve(grid, empty_squares):
